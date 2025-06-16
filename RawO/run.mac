@@ -1,0 +1,13 @@
+/run/numberOfThreads 4
+/control/verbose 0
+/control/saveHistory
+/run/verbose 0
+/control/execute gps.in
+/control/execute detmask_config.in
+/Pepi/cont/loadConfig geometry_config.in
+#/control/macroPath 
+/control/execute ../spectra/28kVFilterAl.in
+#/control/macroPath ../build
+/Pepi/cont/setBaseName PCI_
+/run/initialize
+/Pepi/cont/beamOn 500000000
